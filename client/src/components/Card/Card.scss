@@ -1,0 +1,28 @@
+.card{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    .image{
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+        object-fit: cover;
+        position: relative;
+        &:hover{
+            .secondImg{
+                z-index: 2;
+            }
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+        }
+        .mainImg{
+            z-index: 1;
+        }
+    }
+}
